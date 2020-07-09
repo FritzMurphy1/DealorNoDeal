@@ -29,7 +29,6 @@ def main ():
     print ()
     time.sleep(1)
 
-  
 
 
     #This lets you enter your name
@@ -247,7 +246,9 @@ def main ():
 
 
  
-        avg=(round(sum((fake_money_set))/(len(case_set)))) #sum of money / number of cases =avg
+        avg=(round(sum((fake_money_set))/(len(case_set)+1))) #sum of money / number of cases =avg (+1 is for your_case)
+        #if game_round == 5:
+            #avg = (round(sum((fake_money_set))/(2)))
         print (avg)
         print ("Here is the potential money you can still get") 
         for num in fake_money_set:
@@ -258,7 +259,7 @@ def main ():
         print ("Your highest value is", (max(fake_money_set)) )
         time.sleep(1)
         print ("Your lowest value is", (min(fake_money_set)))
-        print ("The your money average is", avg)
+        print ("Your money average is", avg)
         time.sleep(1)
 
         print ()
@@ -340,7 +341,7 @@ def main ():
                         time.sleep(1)
                         sys.exit(0)
                 if value < first_case:
-                    time.sleep(20)
+                    time.sleep(2)
                     print (" /$$$$$$$  /$$$$$$  /$$$$$$       ")
                     print ("| $$__  $$|_  $$_/ /$$__  $$      ")
                     print ("| $$  \ $$  | $$  | $$  \__/      ")
