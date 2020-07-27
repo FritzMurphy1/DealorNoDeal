@@ -517,7 +517,7 @@ def main ():
                 print ()
                 time.sleep(1)
                 #better things could be done with these and I know that
-                if first_money < money_set:
+                if first_money < value:
                     print ("Sorry... You chose the case that had", first_money, "dollars")
                     print()
                     print ("If you picked the other case you would of had", money_set, "dollars")
@@ -526,7 +526,7 @@ def main ():
                     print ()
                     time.sleep(2)
                     sys.exit(0)
-                if first_money > money_set:
+                if first_money > value:
                     time.sleep(2)
                     print (" /$$      /$$           /$$                ")
                     print ("| $$$    /$$$          | $$                ")
